@@ -1,8 +1,15 @@
 name: hello world
 on:
   push:
+    paths:
+      - '!README.md'
+      - '!docs/**'
+      - '**.js'
+      - '**.html'
     branches:
       - main
+      - release/**
+      - '!develop/**'
 jobs:
   say-hello:
     runs-on: windows-latest
