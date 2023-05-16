@@ -8,4 +8,5 @@ jobs:
     runs-on: windows-latest
     steps:
       - name: Say Hello
-        run: echo HelloWorld
+      - run: echo "TODAY =$(date+ %y-%m-%d)" >> $GITHUB_ENV
+      - run: echo HelloWorld, Today is $TODAY
