@@ -8,6 +8,6 @@ jobs:
     runs-on: windows-latest
     steps:
       - name: Say Hello
-         run: echo "NOW=$(date +'%Y-%m-%dT%H:%M:%S')" >> $GITHUB_ENV
+        run: echo "NOW=$(date +'%Y-%m-%dT%H:%M:%S')" >> $GITHUB_ENV
       - name: Display Message
         run: echo "Hello World, Today is $NOW"
